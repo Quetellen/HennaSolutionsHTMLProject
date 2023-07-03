@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/register.css">
+
+</head>
+<body>
+    <h1>Archi+tech Innovations</h1>
+
+    <div class="container">
+        
+        <form id="form" action="/" method="post" name="newRegister">
+            <h3>Welcome, Please register with us</h3>
+            <img src="./Pictures/login.png" alt="Login" width="100px" height="100px">
+            <br>
+            <!--FULL NAME-->
+            <div class="form-control">
+                <label for="fullName">Full Name</b> <br>
+                <input id="fullName" type="text" name="txtFullName" placeholder="John Watson" required>
+                <div class="error"></div>
+            </div>
+            <!--EMAIL-->
+            <div class="input-control">
+                <label for="email">Email</label> <br>
+                <input id="email" type="text" name="username" placeholder="john@example.com" required>
+                <div class="error"></div>
+            </div>
+
+
+            <div class="form-control">
+                <label for="address">Address</label><br>
+                <input id="address" type="text" name="address" placeholder="5345 Wood Oak - Encino, CA 91789" required>        
+            </div>
+            <!--PASSWORD-->
+            <div class="input-control">
+                <label for=" password">Password</label> <br>
+                <input id="password" type="password" name="password" placeholder="minimum 6 characters" required>
+                <div class="error"></div>
+            <div class="input-control">
+                <label for="password">Password</label><br>
+                <input id="password2" type="password" name="password2" placeholder="must match" required>
+                <div class="error"></div>
+            <!--BUTON-->       
+            <input type="checkbox" checked="checked" name="rememberMe">Remember Me  <br>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+    <script defer src="./validatingregister.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- 
+<br>
+<input type="checkbox" checked="checked" name="rememberMe">Remember Me
+<br><br> 
+<input type="submit" value="Register" onclick="validateForm(document.newRegister)">  -->
