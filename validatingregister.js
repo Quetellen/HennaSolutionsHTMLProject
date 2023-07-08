@@ -73,13 +73,10 @@
 
 
 
-
-
-
 //OTHER METHOD
 
 
-
+/*
 
 const form = document.getElementById('form');
 const username = document.getElementById('username');
@@ -159,4 +156,63 @@ const validateImputs = () => {
         setSuccess(password2);
     }
 
-};
+};  */
+
+
+// function ValidateEmail(input) {
+
+//     var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  
+//     if (input.value.match(validRegex)) {
+  
+//       alert("Valid email address!");
+  
+//       document.form.email.focus();
+  
+//       return true;
+  
+//     } else {
+  
+//       alert("Invalid email address!");
+  
+//       document.form.email.focus();
+  
+//       return false;
+  
+//     }
+  
+//   }
+
+
+
+
+const form = document.getElementById('form');
+const emailInput = document.getElementById('email');
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  if (emailRegex.test(emailInput.value)) {
+    console.log('Valid email:', emailInput.value);
+
+  } else {
+    console.log('Invalid email');
+  }
+});
+
+
+const form = document.getElementById('form');
+const nameInput = document.getElementById('name');
+const nameRegex = /^[a-zA-Z' ]+$/;
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  if (nameRegex.test(nameInput.value)) {
+    console.log('Valid Name:', nameInput.value);
+
+  } else {
+    console.log('Invalid Name');
+  }
+});

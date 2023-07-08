@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./css/register.css">
 
 </head>
-<body>
+<body onload="document.form.email.focus()">
     <h1>Archi+tech Innovations</h1>
 
     <div class="container">
@@ -20,13 +20,13 @@
             <!--FULL NAME-->
             <div class="form-control">
                 <label for="fullName">Full Name</b> <br>
-                <input id="fullName" type="text" name="txtFullName" placeholder="John Watson" required>
+                <input id="fullName" type="name" name="txtFullName" placeholder="John Watson" required>
                 <div class="error"></div>
             </div>
             <!--EMAIL-->
             <div class="input-control">
                 <label for="email">Email</label> <br>
-                <input id="email" type="text" name="username" placeholder="john@example.com" required>
+                <input id="email" type="email" name="username" placeholder="john@example.com" required>
                 <div class="error"></div>
             </div>
 
@@ -49,7 +49,9 @@
             <button id="submit" type="submit">Submit</button>
         </form>
     </div>
+
     <script defer src="./validatingregister.js"></script>
+    
 </body>
 </html>
 
